@@ -1,18 +1,21 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
-
+// Menu: (Adam) >>>
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  return;
 }
 
+// Blink: (Semyon) >>>
 void loop() {
-  // put your main code here, to run repeatedly:
+  return;
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+// Addition function: (Shaunak) >>>
+int Addition(int a, int b) {
+  return 0;
+}
+
+// Multiplication function: (Rooh) >>>
+int Multiplication(int a, int b) {
+  return 0;
 }
