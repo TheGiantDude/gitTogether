@@ -41,5 +41,19 @@ int Addition(int a, int b) {
 
 // Multiplication function: (Rooh) >>>
 int Multiplication(int a, int b) {
-  return 0;
+  Serial.print("\nEnter first number: ");
+  while (!Serial.available()); // Wait for input
+  int num1 = Serial.parseInt();
+  Serial.println(num1);
+
+  Serial.print("Enter second number: ");
+  while (!Serial.available()); // Wait for input
+  int num2 = Serial.parseInt();
+  Serial.println(num2);
+
+  int result = num1 * num2;
+  Serial.print("Product = ");
+  Serial.println(result);
+
+  return result;
 }
