@@ -88,10 +88,5 @@ int readNumber() {
 
 // Multiplication function: (Rooh) >>>
 int Multiplication(int a, int b) {
-  int result = a * b;
-
-  Serial.print("Product = ");
-  Serial.println(result);
-
-  return result;
+  return 0;
 }
