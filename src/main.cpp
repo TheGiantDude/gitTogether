@@ -25,7 +25,10 @@ void loop() {
     return; // Here, the addition function should execute
   }
   else if (choiceMenu == 2) {
-    return; // Here, the multiplication function should execute
+    Serial.print("\nEnter first number: ");
+    while (!Serial.available());
+    int num1 = Serial.parseInt();
+    Serial.println(num1); // Here, the multiplication function should execute
   }
   else {
     Serial.println("The selected option is wrong or does not exist."); // Small error message
@@ -41,17 +44,8 @@ int Addition(int a, int b) {
 
 // Multiplication function: (Rooh) >>>
 int Multiplication(int a, int b) {
-  Serial.print("\nEnter first number: ");
-  while (!Serial.available()); // Wait for input
-  int num1 = Serial.parseInt();
-  Serial.println(num1);
+  int result = a * b;
 
-  Serial.print("Enter second number: ");
-  while (!Serial.available()); // Wait for input
-  int num2 = Serial.parseInt();
-  Serial.println(num2);
-
-  int result = num1 * num2;
   Serial.print("Product = ");
   Serial.println(result);
 
